@@ -15,33 +15,42 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="Search" placeholder="Enter a city" required />
-          <input type="submit" value="Search" />
+        <form class="weather-search">
+          <input
+            type="Search"
+            placeholder="Enter a city"
+            required
+            class="weather-search-input"
+          />
+          <input type="submit" value="Search" class="weather-search-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Asunción</h1>
-          <p>
-            Saturday 10:30, scattered clouds
-            <br />
-            Humidity: 66%, Wind: 3.13 km/h
-          </p>
+        <div class="weather-app-data">
+          <div class="main-weather">🌤️ 15℃</div>
+          <div class="weather-info">
+            <h1>Asunción</h1>
+            <p>
+              Saturday 10:30, scattered clouds
+              <br />
+              Humidity: 66%, Wind: 3.13 km/h
+            </p>
+          </div>
         </div>
-        <div>🌤️ 15℃</div>
       </main>
+
       <footer>
         Coded by
         <a href="https://github.com/CarolinaBenitezRodas" target="_blank">
-          Carolina Benítez </a
-        >, code hosted on
+          Carolina Benítez</a
+        >
+        , is open-sourced on
         <a
           href="https://github.com/CarolinaBenitezRodas/ForecastNow"
           target="_blank"
           >GitHub</a
         >
-        and website hosted on
+        and hosted on
         <a href="https://forecastmeteo.netlify.app/" target="_blank">Netfily</a>
       </footer>
     </div>
