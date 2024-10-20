@@ -1,0 +1,57 @@
+body {
+  background-color: #fdf8f4;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+a {
+  color: #e3b07a;
+}
+
+.weather-app {
+  background-color: white;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 20px;
+}
+
+header {
+  border-bottom: 1px solid #fdf8f4;
+  padding: 0 0 20px;
+}
+
+.weather-search-input {
+  background-color: #fdf8f4;
+  border: none;
+  border-radius: 8px;
+  width: 80%;
+  font-size: 15px;
+  padding: 12px 20px;
+}
+
+.weather-search-button {
+  background: #e3b07a;
+  padding: 12px 20px;
+  border: none;
+  margin-left: 8px;
+  border-radius: 8px;
+  color: #3b3b3b;
+}
+
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-weather {
+  font-size: 36px;
+  text-align: left;
+}
+
+.weather-info {
+  text-align: right;
+}
