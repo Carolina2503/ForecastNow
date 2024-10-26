@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,12 +16,11 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="weather-search" id="weather-search">
+        <form>
           <input
-            type="Search"
+            type="search"
             placeholder="Enter a city"
             required
-            id="search-form-input"
             class="weather-search-input"
           />
           <input type="submit" value="Search" class="weather-search-button" />
@@ -29,31 +28,28 @@
       </header>
       <main>
         <div class="weather-app-data">
-          <div class="main-weather" id="temperature">🌤️ 15℃</div>
-          <div class="weather-info">
-            <h1 class="weather-app-city" id="city">Asunción</h1>
-            <p>
-              <span id="time"></span>
-              scattered clouds
-              <br />
-              Humidity: 66%, Wind: 3.13 km/h
-            </p>
-          </div>
+          <h1 class="weather-city" id="city"></h1>
+          <p class="weather-info">
+            Saturday 10:30, scattered clouds
+            <br />
+            Humidity: 66%, Wind: 3.13 km/h
+          </p>
         </div>
+        <div class="weather-icon">🌤️</div>
+        <div class="weather-temperature" id="temperature"></div>
       </main>
       <footer>
         Coded by
         <a href="https://github.com/CarolinaBenitezRodas" target="_blank">
           Carolina Benítez</a
-        >
-        , is open-sourced on
+        >, is open-sourced on
         <a
           href="https://github.com/CarolinaBenitezRodas/ForecastNow"
           target="_blank"
           >GitHub</a
         >
         and hosted on
-        <a href="https://forecastmeteo.netlify.app/" target="_blank">Netfily</a>
+        <a href="https://forecastmeteo.netlify.app/" target="_blank">Netlify</a>
       </footer>
     </div>
     <script src="index.js"></script>
