@@ -16,9 +16,10 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
+        <form id="weather-search">
           <input
             type="search"
+            id="search-form-input"
             placeholder="Enter a city"
             required
             class="weather-search-input"
@@ -30,9 +31,11 @@
         <div class="weather-app-data">
           <h1 class="weather-city" id="city"></h1>
           <p class="weather-info">
-            Saturday 10:30, scattered clouds
+            <span id="time"></span>,
+            <span id="description"></span>
             <br />
-            Humidity: 66%, Wind: 3.13 km/h
+            Humidity: <strong id="humidity"></strong>, Wind:
+            <strong id="windSpeed"></strong>
           </p>
         </div>
         <div class="weather-icon">🌤️</div>
