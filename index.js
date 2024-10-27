@@ -14,7 +14,6 @@ function updateWeather(response) {
   timeElement.innerHTML = dateFormat(date);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
-
   windSpeedElement.innerHTML = `${response.data.wind.speed} km/h`;
   temperatureElement.innerHTML = `${Math.round(temperature)}°C`;
 }
@@ -51,7 +50,26 @@ function searchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
+
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  let forecastHtml = "";
+  days.forEach(function (day) {
+    forecastHtml += `
+        <div class="weather-forecast-day">
+          <div class="weather-forecast-date">${day}</div>
+          <div class="weather-forecast-icon">🌥️</div>
+          <div class="weather-forecast-temperatures">
+            <strong>15º</strong> / 9º
+          </div>
+        </div>`;
+  });
+
+  forecast.innerHTML = forecastHtml;
+}
 let searchElement = document.querySelector("#weather-search");
 searchElement.addEventListener("submit", searchSubmit);
 
 searchCity("Asunción");
+displayForecast();
