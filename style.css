@@ -71,7 +71,7 @@ header {
 .weather-forecast {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .weather-forecast-date {
@@ -82,7 +82,7 @@ header {
 }
 
 .weather-forecast-icon {
-  font-size: 38px;
+  width: 60px;
   text-align: center;
 }
 
@@ -92,6 +92,7 @@ header {
   margin-top: 10px;
   display: flex;
   justify-content: center;
+  font-size: 15px;
 }
 
 .weather-forecast-temperature {
