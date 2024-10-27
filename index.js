@@ -7,15 +7,16 @@ function updateWeather(response) {
   let windSpeedElement = document.querySelector("#windSpeed");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector(".weather-icon");
 
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" alt="Weather Icon" />`;
   cityElement.innerHTML = response.data.city;
-
   timeElement.innerHTML = dateFormat(date);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
 
-  windSpeedElement.innerHTML = `${response.data.wind.speed} km/h`; // Updated line
-  temperatureElement.innerHTML = Math.round(temperature);
+  windSpeedElement.innerHTML = `${response.data.wind.speed} km/h`;
+  temperatureElement.innerHTML = `${Math.round(temperature)}°C`;
 }
 
 function dateFormat(date) {

@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
@@ -29,17 +29,20 @@
       </header>
       <main>
         <div class="weather-app-data">
-          <h1 class="weather-city" id="city"></h1>
-          <p class="weather-info">
-            <span id="time"></span>,
-            <span id="description"></span>
-            <br />
-            Humidity: <strong id="humidity"></strong>, Wind:
-            <strong id="windSpeed"></strong>
-          </p>
+          <div class="weather-main-info">
+            <div class="weather-icon"></div>
+            <div class="weather-temperature" id="temperature">25°C</div>
+          </div>
+          <div class="weather-details">
+            <h1 class="weather-city" id="city">Asunción</h1>
+            <p class="weather-info">
+              <span id="time"></span>, <span id="description">Clear Sky</span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="windSpeed"></strong>
+            </p>
+          </div>
         </div>
-        <div class="weather-icon">🌤️</div>
-        <div class="weather-temperature" id="temperature"></div>
       </main>
       <footer>
         Coded by
